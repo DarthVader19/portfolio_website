@@ -1,4 +1,4 @@
-import { type Project } from "@/lib/types";
+import { type Project, type Experience, type BlogPost } from "@/lib/types";
 
 export const projects: Project[] = [
   {
@@ -55,4 +55,55 @@ export const projects: Project[] = [
     demoUrl: "https://example.com",
     imageUrl: "https://placehold.co/600x400.png",
   },
+];
+
+export const experiences: Experience[] = [
+    {
+        role: "Senior AI Engineer",
+        company: "Innovate AI",
+        period: "2021 - Present",
+        description: "Led the development of large-scale NLP models and computer vision systems. Mentored junior engineers and contributed to key architectural decisions.",
+        technologies: ["PyTorch", "TensorFlow", "Kubernetes", "GCP", "MLFlow"]
+    },
+    {
+        role: "Machine Learning Engineer",
+        company: "DataDriven Inc.",
+        period: "2019 - 2021",
+        description: "Designed and deployed predictive models for customer churn and fraud detection. Optimized data pipelines for model training and inference.",
+        technologies: ["Scikit-learn", "XGBoost", "Airflow", "AWS Sagemaker"]
+    },
+    {
+        role: "Software Engineer Intern",
+        company: "Tech Solutions",
+        period: "Summer 2018",
+        description: "Assisted in developing a recommendation engine and contributed to the backend services. Gained experience in agile development and CI/CD practices.",
+        technologies: ["Python", "Flask", "SQL", "Docker", "Jenkins"]
+    }
+];
+
+export const blogPosts: BlogPost[] = [
+    {
+        id: "1",
+        title: "The Future of Generative AI",
+        description: "A deep dive into the latest advancements in generative models and their potential impact on various industries.",
+        date: "October 26, 2023",
+        imageUrl: "https://placehold.co/600x400.png",
+        url: "#"
+    },
+    {
+        id: "2",
+        title: "Fine-Tuning LLMs for Custom Tasks",
+        description: "A practical guide on how to fine-tune large language models for specific applications with your own data.",
+        date: "September 15, 2023",
+        imageUrl: "https://placehold.co/600x400.png",
+        url: "#"
+    },
+    {
+        id: "3",
+        title: "From Pixels to Predictions: A CV Primer",
+        description: "Exploring the fundamentals of computer vision, from basic image processing to complex object detection models.",
+        date: "August 02, 2023",
+        imageUrl: "https://placehold.co/600x400.png",
+        url: "#"
+    }
 ];
