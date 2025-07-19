@@ -1,0 +1,58 @@
+import { type Project } from "@/lib/types";
+
+export const projects: Project[] = [
+  {
+    id: "sentiment-analyzer",
+    title: "Sentiment Analyzer",
+    description: "A web app that uses NLP to analyze the sentiment of user-provided text, classifying it as positive, negative, or neutral.",
+    technologies: ["Python", "Flask", "React", "NLTK"],
+    githubUrl: "https://github.com",
+    demoUrl: "https://example.com",
+    imageUrl: "https://placehold.co/600x400.png",
+  },
+  {
+    id: "image-classifier",
+    title: "Image Classifier",
+    description: "A deep learning model trained to classify images into various categories with high accuracy, built with TensorFlow and Keras.",
+    technologies: ["TensorFlow", "Keras", "Next.js", "Python"],
+    githubUrl: "https://github.com",
+    demoUrl: "https://example.com",
+    imageUrl: "https://placehold.co/600x400.png",
+  },
+  {
+    id: "recommendation-engine",
+    title: "Recommendation Engine",
+    description: "A collaborative filtering-based recommendation system for e-commerce, suggesting products to users based on their browsing history.",
+    technologies: ["PySpark", "MLlib", "FastAPI", "Docker"],
+    githubUrl: "https://github.com",
+    demoUrl: "https://example.com",
+    imageUrl: "https://placehold.co/600x400.png",
+  },
+    {
+    id: "stock-predictor",
+    title: "Stock Market Predictor",
+    description: "Utilizes time-series analysis and LSTMs to predict future stock prices based on historical data.",
+    technologies: ["PyTorch", "Pandas", "Scikit-learn", "Streamlit"],
+    githubUrl: "https://github.com",
+    demoUrl: "https://example.com",
+    imageUrl: "https://placehold.co/600x400.png",
+  },
+  {
+    id: "chatbot",
+    title: "Customer Service Chatbot",
+    description: "An intelligent chatbot designed to handle customer queries, integrated with a knowledge base for real-time assistance.",
+    technologies: ["Dialogflow", "Node.js", "Webhook"],
+    githubUrl: "https://github.com",
+    demoUrl: "https://example.com",
+    imageUrl: "https://placehold.co/600x400.png",
+  },
+  {
+    id: "fraud-detection",
+    title: "Fraud Detection System",
+    description: "A machine learning model that identifies fraudulent transactions in real-time, helping to reduce financial losses.",
+    technologies: ["XGBoost", "FastAPI", "React"],
+    githubUrl: "https://github.com",
+    demoUrl: "https://example.com",
+    imageUrl: "https://placehold.co/600x400.png",
+  },
+];
