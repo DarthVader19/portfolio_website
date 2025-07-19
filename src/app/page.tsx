@@ -5,6 +5,7 @@ import ExperienceSection from "@/components/sections/experience";
 import BlogSection from "@/components/sections/blog";
 import ContactSection from "@/components/sections/contact";
 import Footer from "@/components/layout/footer";
+import Chatbot from "@/components/chatbot/chatbot";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         </div>
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 }
