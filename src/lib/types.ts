@@ -8,6 +8,27 @@ export type Project = {
   imageUrl: string;
 };
 
+export type User = {
+  name: string;
+  title: string;
+  description: string;
+  skills: string[];
+};
+export type Education = {
+  degree: string;
+  institution: string;
+  period: string;
+  description: string;
+  technologies: string[];
+};
+export type Testimonial = {
+  name: string;
+  role: string;
+  company: string;
+  imageUrl: string;
+  testimonial: string;
+};
+
 export type Experience = {
   role: string;
   company: string;

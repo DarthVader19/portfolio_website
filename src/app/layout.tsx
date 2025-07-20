@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
+import {user } from "@/lib/data"; // Assuming user is exported from data.js
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceGrotesk = Space_Grotesk({
@@ -11,8 +12,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "AIArena Portfolio",
-  description: "An AI/ML Developer Portfolio",
+  title: `${user.name}'s Portfolio`,
+  description: `${user.title}`
 };
 
 export default function RootLayout({

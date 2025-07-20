@@ -1,4 +1,57 @@
-import { type Project, type Experience, type BlogPost } from "@/lib/types";
+import { type Project, type Experience, type BlogPost, type User, type Education,type Testimonial } from "@/lib/types";
+
+
+export const user: User = {
+  name: "Ashutosh Yadav",
+  title: "AI & Machine Learning Engineer",
+  description: "Welcome to my portfolio. I specialize in building intelligent systems and leveraging data to create impactful AI/ML solutions.",
+  skills: [
+    "Natural Language Processing",
+    "Computer Vision",
+    "Deep Learning Frameworks",
+    "Predictive Analytics",
+  ],
+};
+export const education: Education[]  = [
+  {
+    degree: "Bachelor of Technology in Computer Science",
+    institution: "XYZ University",
+    period: "2015 - 2019",
+    description: "Focused on AI and machine learning, with projects in NLP and computer vision.",
+    technologies: ["Python", "TensorFlow", "Keras", "Scikit-learn"],
+  },
+  {
+    degree: "Master of Science in Artificial Intelligence",
+    institution: "ABC Institute of Technology",
+    period: "2020 - 2022",
+    description: "Specialized in deep learning and its applications in various domains.",
+    technologies: ["PyTorch", "NLP", "Computer Vision"],
+  },
+];
+export const testimonials: Testimonial[] = [
+  {
+    name: "Dr. Jane Smith",
+    role: "Professor of Computer Science",
+    company: "XYZ University",
+    imageUrl: "https://placehold.co/100x100.png",
+    testimonial: "Ashutosh is an exceptional student with a deep understanding of AI concepts. His projects demonstrate both creativity and technical expertise. I highly recommend him for any AI-related role.",
+  },
+  {
+    name: "Mr. John Doe",
+    role: "Senior AI Engineer",
+    company: "Tech Innovations Ltd.",
+    imageUrl: "https://placehold.co/100x100.png",
+    testimonial: "Ashutosh has a remarkable ability to solve complex problems using AI. His work on our NLP project significantly improved our product's performance. He is a valuable asset to any team.",
+  },
+  {
+    name: "Ms. Emily Johnson",
+    role: "Project Manager",
+    company: "ABC Corp.",
+    imageUrl: "https://placehold.co/100x100.png",
+    testimonial: "Ashutosh is a highly skilled AI professional. His ability to manage projects and collaborate with cross-functional teams is impressive. I have no doubt he will excel in any endeavor he pursues.",
+  },
+];
+
 
 export const projects: Project[] = [
   {
@@ -56,6 +109,15 @@ export const projects: Project[] = [
     imageUrl: "https://placehold.co/600x400.png",
   },
 ];
+
+export const contactinfo = {
+  email: "ashutosh@example.com",
+  phone: "+1234567890",
+  linkedin: "https://www.linkedin.com/in/ashutosh-yadav",
+  github: "https://github.com/ashutosh-yadav",
+  twitter: "https://twitter.com/ashutosh_yadav",
+  website: "https://ashutosh-yadav.com"
+};
 
 export const experiences: Experience[] = [
     {

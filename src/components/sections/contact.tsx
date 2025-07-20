@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Linkedin, Twitter, Globe, Send } from 'lucide-react';
+import { user,contactinfo } from "@/lib/data"; // Assuming user data is exported from data.js
 
 export default function ContactSection() {
   return (
@@ -17,22 +18,22 @@ export default function ContactSection() {
                 <p className="text-muted-foreground mb-8">
                     I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out to me.
                 </p>
-                <div className="space-y-4">
-                    <a href="mailto:your-email@example.com" className="flex items-center gap-4 group">
+                <div className=" flex md:flex gap-6">
+                    <a href={`mailto:${contactinfo.email}`} className="flex items-center gap-4 group">
                         <Mail className="h-6 w-6 text-primary" />
-                        <span className="text-lg group-hover:underline">your-email@example.com</span>
+                        {/* <span className="text-lg group-hover:underline">{contactinfo.email}</span> */}
                     </a>
-                    <a href="#" className="flex items-center gap-4 group">
+                    <a href={contactinfo.twitter} className="flex items-center gap-4 group">
                         <Twitter className="h-6 w-6 text-primary" />
-                        <span className="text-lg group-hover:underline">@your_twitter</span>
+                        {/* <span className="text-lg group-hover:underline">{contactinfo.twitter}</span> */}
                     </a>
-                     <a href="#" className="flex items-center gap-4 group">
+                     <a href={contactinfo.linkedin} className="flex items-center gap-4 group">
                         <Linkedin className="h-6 w-6 text-primary" />
-                        <span className="text-lg group-hover:underline">linkedin.com/in/your-profile</span>
+                        {/* <span className="text-lg group-hover:underline">{contactinfo.linkedin}</span> */}
                     </a>
-                     <a href="#" className="flex items-center gap-4 group">
+                     <a href={contactinfo.website} className="flex items-center gap-4 group">
                         <Globe className="h-6 w-6 text-primary" />
-                        <span className="text-lg group-hover:underline">your-website.com</span>
+                        {/* <span className="text-lg group-hover:underline">{contactinfo.website}</span> */}
                     </a>
                 </div>
             </div>

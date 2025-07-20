@@ -9,11 +9,14 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { askChatbot } from '@/ai/flows/chatbot-flow';
 import { useToast } from '@/hooks/use-toast';
+import { user} from '@/lib/data';
 
 type Message = {
   text: string;
   sender: 'user' | 'bot';
 };
+
+
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +24,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       sender: 'bot',
-      text: "Hello! I'm an AI assistant. Ask me about John Doe's portfolio.",
+      text: `Hello! I'm an AI assistant. Ask me about ${user.name}'s portfolio.`,
     },
   ]);
   const [isLoading, setIsLoading] = useState(false);
