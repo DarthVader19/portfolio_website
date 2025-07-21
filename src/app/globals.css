@@ -34,9 +34,9 @@
   }
 
   .dark {
-    --background-start-rgb: 2 20 30;
-    --background-end-rgb: 15 50 60;
-    --background: 222.2 84% 4.9%;
+    --background-start-rgb: 0 30 60;      /* Deep blue */
+    --background-end-rgb: 0 120 255;      /* Vibrant blue */
+    --background: 220 80% 10%;            /* Fallback blue */
     --foreground: 210 40% 98%;
     --card: 224 71.4% 4.1%;
     --card-foreground: 210 40% 98%;
@@ -71,4 +71,37 @@
     @apply bg-background text-foreground;
     background-image: linear-gradient(to bottom right, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
   }
+}
+
+
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-down {
+  animation: fade-in-down 0.8s ease forwards;
+}
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+@keyframes scroll-hint {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-20px); }
+  40% { transform: translateX(20px); }
+  60% { transform: translateX(-10px); }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+.animate-scroll-hint {
+  animation: scroll-hint 1.2s ease;
 }

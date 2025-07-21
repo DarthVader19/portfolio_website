@@ -1,17 +1,30 @@
 import TypingAnimation from "@/components/ui/typing-animation";
-
-
-import { user as User } from "@/lib/data"; // Assuming User is exported from data.js
+import { user as User } from "@/lib/data";
 
 export default function HeroSection() {
   return (
     <section className="py-20 md:py-32 animate-in fade-in duration-700">
       <div className="container mx-auto text-center">
-        <h1 className="text-6xl md:text-8xl font-bold font-headline tracking-tighter">
+        {/* Name with gradient and fade-in */}
+        <h1 className=" text-6xl md:text-8xl font-bold font-headline tracking-tighter" 
+        
+        >Hi, I am {" "}
+             <span className="text-6xl md:text-8xl font-bold font-headline tracking-tighter
+            bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500
+            text-transparent bg-clip-text
+            opacity-0 animate-fade-in-down"
+          style={{ animationDelay: "1s", animationFillMode: "forwards" }}>
+            {User.name}
+
+        </span>
           
-          {User.name}
         </h1>
-        <h2 className="mt-2 text-3xl md:text-5xl font-semibold font-headline text-primary">
+        {/* Title with fade-in and delay */}
+        <h2
+          className="mt-2 text-3xl md:text-5xl font-semibold font-headline text-blue-300
+            opacity-0 animate-fade-in-down"
+          style={{ animationDelay: "1.4s", animationFillMode: "forwards" }}
+        >
           {User.title}
         </h2>
         <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">

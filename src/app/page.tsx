@@ -7,6 +7,9 @@ import BlogSection from "@/components/sections/blog";
 import ContactSection from "@/components/sections/contact";
 import Footer from "@/components/layout/footer";
 import Chatbot from "@/components/chatbot/chatbot";
+import TechCarousel from "@/components/sections/carousel";
+// import TechCarousel2 from "@/components/sections/TechCarousel2";
+
 
 export default function Home() {
   return (
@@ -16,6 +19,11 @@ export default function Home() {
       <main className="flex-grow">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <HeroSection />
+          <div className="my-8">
+            <h2 className="text-2xl font-bold text-center mb-4">Worked on</h2>
+            <TechCarousel />
+          </div>
+          {/* <TechCarousel2 /> */}
           <ProjectsSection />
           <ExperienceSection />
           <BlogSection />

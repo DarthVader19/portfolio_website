@@ -1,5 +1,21 @@
 import { type Project, type Experience, type BlogPost, type User, type Education,type Testimonial } from "@/lib/types";
+import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiNodedotjs, SiTailwindcss, SiHtml5, SiCss3, SiGit, SiGithub, SiFigma } from "react-icons/si";
 
+
+export const techStack = [
+  { name: "JavaScript", icon: SiJavascript },
+  { name: "TypeScript", icon: SiTypescript },
+  { name: "React", icon: SiReact },
+  { name: "Next.js", icon: SiNextdotjs },
+  { name: "Node.js", icon: SiNodedotjs },
+  { name: "Tailwind CSS", icon: SiTailwindcss },
+  { name: "HTML5", icon: SiHtml5 },
+  { name: "CSS3", icon: SiCss3 },
+  { name: "Git", icon: SiGit },
+  { name: "GitHub", icon: SiGithub },
+  { name: "Figma", icon: SiFigma },
+  // Add more as needed
+];
 
 export const user: User = {
   name: "Ashutosh Yadav",

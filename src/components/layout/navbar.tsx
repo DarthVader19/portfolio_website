@@ -6,7 +6,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-900 text-white py-4">
+    <nav className="bg-gray-900 text-white py-4 sticky top-0 z-30  w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex items-center justify-between px-4 relative">
         <div className="text-xl font-bold">Ashutosh Yadav</div>
         {/* Hamburger for mobile */}
