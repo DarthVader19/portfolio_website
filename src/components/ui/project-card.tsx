@@ -34,7 +34,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           ))}
         </div>
       </CardContent>
-      <CardFooter className="flex justify-end gap-2">
+      <CardFooter className="flex justify-center gap-1 mt-1">
         <Button asChild variant="outline" size="sm" className="group">
           <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
             <Github className="mr-2 h-4 w-4 transition-transform group-hover:scale-110" />
@@ -43,7 +43,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </Button>
         <Button asChild variant="default" size="sm" className="group bg-accent hover:bg-accent/90">
           <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-            <ExternalLink className="mr-2 h-4 w-4 transition-transform group-hover:scale-110" />
+            <ExternalLink className="mr-1 h-4 w-2 transition-transform group-hover:scale-110" />
             Live Demo
           </a>
         </Button>
